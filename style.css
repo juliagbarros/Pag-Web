@@ -1,0 +1,134 @@
+body{
+    background-color: rgb(7, 2, 33);
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.cabecalho{
+    color:rgb(255, 255, 255);
+    background-image: url(imgs/hogwarts2.jpg);
+    background-size:cover;
+    background-position: center center;
+    padding: 30px;
+    text-align: center;
+    color: rgb(229, 236, 101);
+    text-shadow: 0 0 10px rgb(12, 9, 4) ;
+    box-shadow: 0 0 20px rgb(68, 76, 7);
+    text-align: center;
+}
+
+.menu{
+    color: white;
+    padding: 30px;
+    text-align: center;
+    background-color: rgb(44, 36, 2);
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 10px rgb(224, 239, 58) ;
+    padding: 5px;
+    font-size: 15px;
+}
+
+a:hover{
+    color: rgb(173, 5, 5);
+    background-color:yellow;
+}
+
+.principal{
+    text-align: center;
+    color:white;
+    padding: 20px;
+
+}
+
+#castelo{
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgb(2, 0, 5);
+
+}
+
+.infos p{
+    padding: 10px;
+    text-align: justify;
+    
+}
+
+.rodape{
+    background-color: rgb(44, 36, 2);
+    text-align: center;
+    align-items: center;
+    padding: 15px;
+    color:white; 
+}
+
+.rodape span{
+    text-shadow: 0 0 8px rgb(224, 239, 58) ;
+}
+
+#img_grifinoria{
+    border-radius: 20px;
+    margin-right:20px ;
+}
+.grifinoria{
+    display: flex;
+    background-color:rgb(72, 2, 2);
+    padding: 20px;
+    box-shadow: 0 0 20px rgb(108, 4, 4);
+    text-align:justify ;;
+    border-radius: 50px;
+}
+
+#img_lufa{
+    border-radius: 20px;
+    margin-right:20px ;
+}
+
+.lufa{
+    display: flex;
+    background-color:rgb(124, 124, 8);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px gold;
+    text-align:justify ;;
+    border-radius: 50px;
+}
+
+#img_corvinal{
+    border-radius: 20px;
+    margin-right:20px ;
+}
+
+.corvinal{
+    display: flex;
+    background-color: rgb(7, 7, 100);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgb(18, 18, 129);
+    text-align:justify ;;
+    border-radius: 50px;
+}
+
+#img_sonserina{
+    border-radius: 20px;
+    margin-right:20px ;
+}
+
+.sonserina{
+    display: flex;
+    background-color: rgb(5, 62, 5);
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px green;
+    text-align:justify ;;
+    border-radius: 50px;
+}
+
+#img_varinha{
+    border-radius: 20px;
+}
+
