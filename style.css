@@ -2,7 +2,6 @@ body{
     background-color: rgb(7, 2, 33);
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
 
 .cabecalho{
@@ -23,7 +22,6 @@ body{
     padding: 30px;
     text-align: center;
     background-color: rgb(44, 36, 2);
-
 }
 
 .menu a {
@@ -43,36 +41,35 @@ a:hover{
     text-align: center;
     color:white;
     padding: 20px;
-
 }
+
 
 #castelo{
     border-radius: 20px;
     box-shadow: 0 0 40px rgb(2, 0, 5);
-
 }
 
 .infos p{
     padding: 10px;
     text-align: justify;
-    
 }
 
 .rodape{
     background-color: rgb(44, 36, 2);
     text-align: center;
     align-items: center;
-    padding: 15px;
+    padding: 5px;
     color:white; 
 }
 
-.rodape span{
-    text-shadow: 0 0 8px rgb(224, 239, 58) ;
+#img_hogwarts{
+    padding-top: 5px;
 }
 
 #img_grifinoria{
     border-radius: 20px;
     margin-right:20px ;
+    margin-top: 30px;
 }
 .grifinoria{
     display: flex;
@@ -130,5 +127,102 @@ a:hover{
 
 #img_varinha{
     border-radius: 20px;
+}
+
+.lumos{
+    background-color: rgb(25, 24, 64);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgb(43, 18, 126);
+}
+
+.alohomora{
+    background-color: rgb(25, 24, 64);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgb(43, 18, 126);
+}
+.accio{
+    background-color: rgb(25, 24, 64);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgb(43, 18, 126);
+}
+
+.imperio{
+    background-color: rgb(25, 24, 64);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgb(43, 18, 126);
+}
+.crucio{
+    background-color: rgb(25, 24, 64);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgb(43, 18, 126);
+}
+
+.avada{
+    background-color: rgb(25, 24, 64);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgb(43, 18, 126);
+}
+
+.patrono{
+    background-color: rgb(25, 24, 64);
+    color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgb(43, 18, 126);
+}
+
+#gif_chapeu{
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(78, 57, 28);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.teste {
+    text-align: left;
+    padding: 10px;
+    background-color: rgb(25, 24, 64);
+    border-radius: 20px;
+}
+
+.teste p{
+    color: gold;
+}
+
+.teste h3{
+    text-align: center;
 }
 
