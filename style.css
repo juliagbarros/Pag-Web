@@ -336,10 +336,52 @@ button {
     color:gold;
     background-color: rgb(181, 183, 169);
     text-shadow: 0 0 8px rgb(30, 30, 13) ;
-    box-shadow: 0 0 50px rgb(7, 7, 6);
+    box-shadow: 0 0 20px rgb(7, 7, 6);
 }
 
 button:hover{
     transform: scale(1.1);   
+}
+
+.card_casa{
+    background-color: rgb(25, 24, 64);
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.card_casa p {
+    text-align: justify;
+}
+
+.card_casa h1{
+    font-family: "Harry P";
+    font-size: 50px;
+    color:gold;
+    text-shadow: 0 0 8px rgb(30, 30, 13) ;
+}
+.card_casa img{
+ border-radius: 20px;
+box-shadow: 0 0 20px rgb(2, 0, 5);
+}
+
+.card_casa img:hover{
+    transform: scale(1.03);
+
+}
+
+#botao_refazer_teste{
+    margin-top: 20px;
+}
+
+#data{
+    color: white;
+    font-family: "Harry P";
+    text-align: right;
+    margin-right: 80px;
 }
 

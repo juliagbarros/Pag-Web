@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
 
@@ -21,6 +20,7 @@
         <a href="feiticos.html"> Feitiços </a>|
         <a href="teste.html"> Teste: Descubra sua casa </a>
     </div>
+    <p id="data"></p>
 
     <div class="principal">
         <h2>
@@ -45,53 +45,53 @@
             <p>
                 2- Nos trabalhos/atividades em grupo, quem é você geralmente?
             </p>
-            <input type="radio" name="papel" id="decide"> 
+            <input type="radio" name="papel" id="decide" required> 
             <label for="decide">Quem toma as principais decisões.</label>
-            <input type="radio" name="papel" id="planeja">
+            <input type="radio" name="papel" id="planeja" required>
             <label for="planeja"> Quem planeja e pesquisa.</label>
-            <input type="radio" name="papel" id="escuta"> 
+            <input type="radio" name="papel" id="escuta" required> 
             <label for="escuta">Quem apoia e escuta.</label>
-            <input type="radio" name="papel" id="arquiteta">
+            <input type="radio" name="papel" id="arquiteta" required>
             <label for="arquiteta">Quem traz a estratégia para vencer.</label>
 
             <p>
                 3- O que mais te motiva?
             </p>
-            <input type="radio" name="motivacao" id="desafios"> 
+            <input type="radio" name="motivacao" id="desafios" required> 
             <label for="desafios">Superar desafios.</label>
-            <input type="radio" name="motivacao" id="aprendizado"> 
+            <input type="radio" name="motivacao" id="aprendizado" required> 
             <label for="aprendizado">Aprender coisas novas.</label>
-            <input type="radio" name="motivacao" id="ajudar"> 
+            <input type="radio" name="motivacao" id="ajudar" required> 
             <label for="ajudar">Ajudar quem eu amo.</label>
-            <input type="radio" name="motivacao" id="reconhecimento">
+            <input type="radio" name="motivacao" id="reconhecimento" required>
             <label for="reconhecimento">Alcançar reconhecimento e admiração.</label>
 
             <p>
                 4- Ao se deparar com um problema grande, o que você faz?
             </p>
-            <input type="radio" name="problema" id="destemido">
+            <input type="radio" name="problema" id="destemido" required>
             <label for="destemido">Enfrento sem medo.</label>
-            <input type="radio" name="problema" id="analista"> 
+            <input type="radio" name="problema" id="analista" required> 
             <label for="analista">Preciso de um tempo para analisar.</label>
-            <input type="radio" name="problema" id="pedir"> 
+            <input type="radio" name="problema" id="pedir" required> 
             <label for="pedir">Peço ajuda a quem amo.</label>
-            <input type="radio" name="problema" id="independente">
+            <input type="radio" name="problema" id="independente" required>
             <label for="independente">Independente dos meios, vou resolver.</label>
 
             <p>
                 5- Em qual ambiente abaixo você se sentiria mais feliz?
             </p>
-            <input type="radio" name="ambiente" id="aventuras">
+            <input type="radio" name="ambiente" id="aventuras" required>
             <label for="aventuras">Um lugar cheio de aventuras.</label>
-            <input type="radio" name="ambiente" id="biblioteca"> 
+            <input type="radio" name="ambiente" id="biblioteca" required> 
             <label for="biblioteca">Uma biblioteca silenciosa.</label>
-            <input type="radio" name="ambiente" id="amigos"> 
+            <input type="radio" name="ambiente" id="amigos" required> 
             <label for="amigos">Uma sala com meus amigos</label>
-            <input type="radio" name="ambiente" id="luxo">
+            <input type="radio" name="ambiente" id="luxo" required>
             <label for="luxo">Um lugar extravagante e luxuoso</label>
         </div>
 
-        <button type="button">Finalizar</button>
+        <button type="button" id="botao_finalizar" onclick="escolha_casa()">Finalizar</button>
 
     </div>
 
@@ -101,6 +101,6 @@
             Portal Hogwarts © - 2026. 
         </p>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
