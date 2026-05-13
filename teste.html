@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
+
     <div class="cabecalho">
         <h1>
            Bem-vindo(a) ao Portal Hogwarts
@@ -17,7 +19,7 @@
         <a href="index.html"> Home </a>|
         <a href="casas.html"> Casas </a>|
         <a href="feiticos.html"> Feitiços </a>|
-        <a href="teste.html"> Teste do chapéu seletor: Descubra sua casa </a>
+        <a href="teste.html"> Teste: Descubra sua casa </a>
     </div>
 
     <div class="principal">
@@ -31,43 +33,65 @@
             <p>
                 1- Qual qualidade você mais valoriza em uma pessoa?
             </p>
-            <input type="radio" name="admiracao"> Coragem.
-            <input type="radio" name="admiracao"> Inteligência.
-            <input type="radio" name="admiracao"> Lealdade.
-            <input type="radio" name="admiracao"> Ambição.
+            <input type="radio" name="admiracao" id="coragem">
+            <label for="coragem">Coragem.</label>
+            <input type="radio" name="admiracao" id="inteligencia">
+            <label for="inteligencia">Inteligência.</label>
+            <input type="radio" name="admiracao" id="lealdade">
+            <label for="lealdade">Lealdade.</label>
+            <input type="radio" name="admiracao" id="ambicao">
+            <label for="ambicao">Ambição.</label>
 
             <p>
                 2- Nos trabalhos/atividades em grupo, quem é você geralmente?
             </p>
-            <input type="radio" name="papel"> Quem toma as principais decisões.
-            <input type="radio" name="papel"> Quem planeja e pesquisa.
-            <input type="radio" name="papel"> Quem apoia e escuta.
-            <input type="radio" name="papel"> Quem traz a estratégia para ser o melhor grupo.
+            <input type="radio" name="papel" id="decide"> 
+            <label for="decide">Quem toma as principais decisões.</label>
+            <input type="radio" name="papel" id="planeja">
+            <label for="planeja"> Quem planeja e pesquisa.</label>
+            <input type="radio" name="papel" id="escuta"> 
+            <label for="escuta">Quem apoia e escuta.</label>
+            <input type="radio" name="papel" id="arquiteta">
+            <label for="arquiteta">Quem traz a estratégia para vencer.</label>
 
             <p>
                 3- O que mais te motiva?
             </p>
-            <input type="radio" name="motivacao"> Superar desafios.
-            <input type="radio" name="motivacao"> Aprender coisas novas.
-            <input type="radio" name="motivacao"> Ajudar quem eu amo.
-            <input type="radio" name="motivacao"> Alcançar reconhecimento e admiração.
+            <input type="radio" name="motivacao" id="desafios"> 
+            <label for="desafios">Superar desafios.</label>
+            <input type="radio" name="motivacao" id="aprendizado"> 
+            <label for="aprendizado">Aprender coisas novas.</label>
+            <input type="radio" name="motivacao" id="ajudar"> 
+            <label for="ajudar">Ajudar quem eu amo.</label>
+            <input type="radio" name="motivacao" id="reconhecimento">
+            <label for="reconhecimento">Alcançar reconhecimento e admiração.</label>
 
             <p>
                 4- Ao se deparar com um problema grande, o que você faz?
             </p>
-            <input type="radio" name="problema"> Enfrento sem medo.
-            <input type="radio" name="problema"> Preciso de um tempo para analisar.
-            <input type="radio" name="problema"> Peço ajuda a quem amo.
-            <input type="radio" name="problema"> Independente dos meios, vou resolver.
+            <input type="radio" name="problema" id="destemido">
+            <label for="destemido">Enfrento sem medo.</label>
+            <input type="radio" name="problema" id="analista"> 
+            <label for="analista">Preciso de um tempo para analisar.</label>
+            <input type="radio" name="problema" id="pedir"> 
+            <label for="pedir">Peço ajuda a quem amo.</label>
+            <input type="radio" name="problema" id="independente">
+            <label for="independente">Independente dos meios, vou resolver.</label>
 
             <p>
                 5- Em qual ambiente abaixo você se sentiria mais feliz?
             </p>
-            <input type="radio" name="ambiente"> Um lugar cheio de aventuras.
-            <input type="radio" name="ambiente"> Uma biblioteca silenciosa.
-            <input type="radio" name="ambiente"> Uma sala com meus melhores amigos.
-            <input type="radio" name="ambiente"> Um lugar elegante, extravagante e luxuoso
+            <input type="radio" name="ambiente" id="aventuras">
+            <label for="aventuras">Um lugar cheio de aventuras.</label>
+            <input type="radio" name="ambiente" id="biblioteca"> 
+            <label for="biblioteca">Uma biblioteca silenciosa.</label>
+            <input type="radio" name="ambiente" id="amigos"> 
+            <label for="amigos">Uma sala com meus amigos</label>
+            <input type="radio" name="ambiente" id="luxo">
+            <label for="luxo">Um lugar extravagante e luxuoso</label>
         </div>
+
+        <button type="button">Finalizar</button>
 
     </div>
 

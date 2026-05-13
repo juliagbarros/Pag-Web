@@ -1,7 +1,20 @@
+@font-face {
+    font-family: "Harry P";
+    src: url(font/HARRYP__.TTF);
+}
+
 body{
     background-color: rgb(7, 2, 33);
     margin: 0;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color: rgb(249, 250, 245);
+    font-family: "Harry P";
+    font-size: 40px;
+    text-shadow: 0 0 8px rgb(90, 62, 6) ;
+
 }
 
 .cabecalho{
@@ -9,25 +22,28 @@ body{
     background-image: url(imgs/hogwarts2.jpg);
     background-size:cover;
     background-position: center center;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
-    color: rgb(229, 236, 101);
-    text-shadow: 0 0 10px rgb(12, 9, 4) ;
-    box-shadow: 0 0 20px rgb(68, 76, 7);
+    color:rgb(229, 200, 37);
+    font-size: 30px;
+    font-family: "Harry P";
+    text-shadow: 0 0 10px rgb(66, 52, 24) ;
+    box-shadow: 0 0 20px rgb(15, 17, 1);
     text-align: center;
 }
 
 .menu{
     color: white;
-    padding: 30px;
+    padding-top: 5px;
+    padding: 10px;
     text-align: center;
-    background-color: rgb(44, 36, 2);
+    background-color: rgb(0, 6, 1);
 }
 
 .menu a {
     text-decoration: none;
-    color: white;
-    text-shadow: 0 0 10px rgb(224, 239, 58) ;
+    color: rgb(255, 255, 254);
+    text-shadow: 0 0 10px rgb(182, 77, 56) ;
     padding: 5px;
     font-size: 15px;
 }
@@ -35,6 +51,8 @@ body{
 a:hover{
     color: rgb(173, 5, 5);
     background-color:yellow;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .principal{
@@ -43,14 +61,29 @@ a:hover{
     padding: 20px;
 }
 
+.principal h3{
+    text-shadow: 0 0 10px rgb(37, 106, 185) ;
+}
 
-#castelo{
+#img_castelo{
     border-radius: 20px;
     box-shadow: 0 0 40px rgb(2, 0, 5);
 }
 
-.infos p{
-    padding: 10px;
+#img_castelo:hover{
+    transform: scale(1.05);
+}
+
+.infos{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color: rgb(25, 24, 64);
+    border-radius: 20px;
+}
+.infos p {
+    margin: 40px;
     text-align: justify;
 }
 
@@ -59,7 +92,9 @@ a:hover{
     text-align: center;
     align-items: center;
     padding: 5px;
-    color:white; 
+    color:white;
+    font-family: "Harry P";
+    font-size: 18px;
 }
 
 #img_hogwarts{
@@ -75,9 +110,15 @@ a:hover{
     display: flex;
     background-color:rgb(72, 2, 2);
     padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
     box-shadow: 0 0 20px rgb(108, 4, 4);
     text-align:justify ;;
     border-radius: 50px;
+}
+
+.grifinoria:hover{
+    transform: scale(1.05);
 }
 
 #img_lufa{
@@ -90,9 +131,15 @@ a:hover{
     background-color:rgb(124, 124, 8);
     padding: 20px;
     margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
     box-shadow: 0 0 20px gold;
     text-align:justify ;;
     border-radius: 50px;
+}
+
+.lufa:hover{
+    transform: scale(1.05);
 }
 
 #img_corvinal{
@@ -105,9 +152,15 @@ a:hover{
     background-color: rgb(7, 7, 100);
     padding: 20px;
     margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
     box-shadow: 0 0 20px rgb(18, 18, 129);
     text-align:justify ;;
     border-radius: 50px;
+}
+
+.corvinal:hover{
+    transform: scale(1.05);
 }
 
 #img_sonserina{
@@ -120,9 +173,16 @@ a:hover{
     background-color: rgb(5, 62, 5);
     padding: 20px;
     margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom:40px ;
     box-shadow: 0 0 20px green;
     text-align:justify ;;
     border-radius: 50px;
+}
+
+.sonserina:hover{
+    transform: scale(1.05);
 }
 
 #img_varinha{
@@ -135,9 +195,12 @@ a:hover{
     border-radius: 20px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 0 10px rgb(43, 18, 126);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.lumos:hover{
+    transform: scale(1.08);
 }
 
 .alohomora{
@@ -146,19 +209,26 @@ a:hover{
     border-radius: 20px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 0 10px rgb(43, 18, 126);
+    margin-left: 80px;
+    margin-right: 80px;
 }
+
+.alohomora:hover{
+    transform: scale(1.08);
+}
+
 .accio{
     background-color: rgb(25, 24, 64);
     color: white;
     border-radius: 20px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 0 10px rgb(43, 18, 126);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.accio:hover{
+    transform: scale(1.08);
 }
 
 .imperio{
@@ -167,19 +237,26 @@ a:hover{
     border-radius: 20px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 0 10px rgb(43, 18, 126);
+    margin-left: 80px;
+    margin-right: 80px;
 }
+
+.imperio:hover{
+    transform: scale(1.08);
+}
+
 .crucio{
     background-color: rgb(25, 24, 64);
     color: white;
     border-radius: 20px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 0 10px rgb(43, 18, 126);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.crucio:hover{
+    transform: scale(1.08);
 }
 
 .avada{
@@ -188,9 +265,12 @@ a:hover{
     border-radius: 20px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 0 10px rgb(43, 18, 126);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.avada:hover{
+    transform: scale(1.08);
 }
 
 .patrono{
@@ -199,9 +279,12 @@ a:hover{
     border-radius: 20px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    box-shadow: 0 0 10px rgb(43, 18, 126);
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.patrono:hover{
+    transform: scale(1.08);
 }
 
 #gif_chapeu{
@@ -211,18 +294,52 @@ a:hover{
     margin-top: 20px;
 }
 
+#gif_chapeu:hover{
+    transform: scale(1.08);
+}
+
 .teste {
+    align-items: center ;
     text-align: left;
-    padding: 10px;
+    padding: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
     background-color: rgb(25, 24, 64);
     border-radius: 20px;
 }
 
 .teste p{
-    color: gold;
+    color: rgb(192, 161, 35);
+    text-shadow: 0 0 8px rgb(7, 7, 0) ;
+    padding-top: 20px;
 }
 
 .teste h3{
     text-align: center;
+}
+
+label{
+    display: inline-block;
+}
+
+label:hover{
+     transform: scale(1.05);
+}
+
+button {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-family: "Harry P";
+    font-size: 30px;
+    color:gold;
+    background-color: rgb(181, 183, 169);
+    text-shadow: 0 0 8px rgb(30, 30, 13) ;
+    box-shadow: 0 0 50px rgb(7, 7, 6);
+}
+
+button:hover{
+    transform: scale(1.1);   
 }
 
