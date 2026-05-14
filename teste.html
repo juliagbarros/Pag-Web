@@ -33,13 +33,13 @@
             <p>
                 1- Qual qualidade você mais valoriza em uma pessoa?
             </p>
-            <input type="radio" name="admiracao" id="coragem">
+            <input type="radio" name="admiracao" id="coragem" required>
             <label for="coragem">Coragem.</label>
-            <input type="radio" name="admiracao" id="inteligencia">
+            <input type="radio" name="admiracao" id="inteligencia" required>
             <label for="inteligencia">Inteligência.</label>
-            <input type="radio" name="admiracao" id="lealdade">
+            <input type="radio" name="admiracao" id="lealdade" required>
             <label for="lealdade">Lealdade.</label>
-            <input type="radio" name="admiracao" id="ambicao">
+            <input type="radio" name="admiracao" id="ambicao" required>
             <label for="ambicao">Ambição.</label>
 
             <p>
@@ -89,10 +89,10 @@
             <label for="amigos">Uma sala com meus amigos</label>
             <input type="radio" name="ambiente" id="luxo" required>
             <label for="luxo">Um lugar extravagante e luxuoso</label>
+
+            <button type="button" id="botao_finalizar" onclick="escolha_casa()" >Finalizar</button>
+           
         </div>
-
-        <button type="button" id="botao_finalizar" onclick="escolha_casa()">Finalizar</button>
-
     </div>
 
     <div class="rodape">

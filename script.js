@@ -1,7 +1,4 @@
-let pontos_grifinoria =0
-let pontos_sonserina =0
-let pontos_lufa_lufa =0
-let pontos_corvinal =0
+
 let data_atual=new Date()
 
 function troca_pagina(){
@@ -9,6 +6,21 @@ function troca_pagina(){
 }
 
 function escolha_casa(){
+   let pontos_grifinoria =0
+   let pontos_sonserina =0
+   let pontos_lufa_lufa =0
+   let pontos_corvinal =0
+
+   if (
+      !document.querySelector('input[name="admiracao"]:checked')||
+      !document.querySelector('input[name="papel"]:checked')||
+      !document.querySelector('input[name="motivacao"]:checked')||
+      !document.querySelector('input[name="problema"]:checked')||
+      !document.querySelector('input[name="ambiente"]:checked')
+   ){
+      alert("Responda todas as perguntas para que o chapéu decida sua casa!")
+      return
+   }
 
    // Lógica p pergunta 1: (com peso 2 pra tentar evitar empate entre casas)
    if (document.getElementById("coragem").checked){
@@ -40,16 +52,16 @@ function escolha_casa(){
 
    //Lógica p terceira pergunta:
    if(document.getElementById("desafios").checked){
-      pontos_grifinoria+=2
+      pontos_grifinoria++
    }
    else if(document.getElementById("aprendizado").checked){
-      pontos_corvinal+=2
+      pontos_corvinal++
    }
    else if(document.getElementById("ajudar").checked){
-      pontos_lufa_lufa+=2
+      pontos_lufa_lufa++
    }
    else if(document.getElementById("reconhecimento").checked){
-      pontos_sonserina+=2
+      pontos_sonserina++
    }
 
    //Lógica p quarta pergunta:
