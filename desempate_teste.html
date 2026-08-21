@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cabecalho">
+        <h1>
+           Bem-vindo(a) ao Portal Hogwarts
+        </h1>
+    </div>
+
+    <div class="menu">
+        <a href="index.html"> Home </a>|
+        <a href="casas.html"> Casas </a>|
+        <a href="feiticos.html"> Feitiços </a>|
+        <a href="teste.html"> Teste: Descubra sua casa </a>
+    </div>
+    <p id="data"></p>
+
+    <div class="principal">
+        <h2>
+            Hmmm... Ainda preciso pensar... 
+        </h2>
+        <img src="imgs/blake-johnson-animation-test.gif" width="800px" id="gif_chapeu" alt="Imagem do chapéu seletor">
+
+        <div class="teste">
+            <h3>Última pergunta: </h3>
+
+            <center>
+                <p>
+                8- Qual destas palavras mais ressoa com o seu objetivo pessoal?
+            </p>
+            <input type="radio" name="desempate" id="gloria" required>
+            <label for="gloria">Glória</label>
+            <input type="radio" name="desempate" id="conhecimento" required>
+            <label for="conhecimento">Conhecimento</label>
+            <input type="radio" name="desempate" id="harmonia" required>
+            <label for="harmonia">Harmonia</label>
+            <input type="radio" name="desempate" id="triunfo" required>
+            <label for="triunfo">Triunfo</label>
+
+            <button type="button" id="botao_finalizar" onclick="desempatar()" >Finalizar</button>
+            </center>
+
+        </div>
+    </div>
+
+    <div class="rodape">
+         <img src="imgs/Hogwarts.png" width="60px" id="img_hogwarts" alt="Logo de Hogwarts">
+        <p>
+            Portal Hogwarts © - 2026. 
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

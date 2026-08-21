@@ -16,7 +16,9 @@ function escolha_casa(){
       !document.querySelector('input[name="papel"]:checked')||
       !document.querySelector('input[name="motivacao"]:checked')||
       !document.querySelector('input[name="problema"]:checked')||
-      !document.querySelector('input[name="ambiente"]:checked')
+      !document.querySelector('input[name="ambiente"]:checked')||
+      !document.querySelector('input[name="habilidade"]:checked')||
+      !document.querySelector('input[name="misterio"]:checked')
    ){
       alert("Responda todas as perguntas para que o chapéu decida sua casa!")
       return
@@ -78,7 +80,7 @@ function escolha_casa(){
       pontos_sonserina++
    }
 
-   //Lógica p ultima pergunta:
+   //Lógica p quinta pergunta:
    if(document.getElementById("aventuras").checked){
       pontos_grifinoria++
    }
@@ -89,6 +91,34 @@ function escolha_casa(){
       pontos_lufa_lufa++
    }
    else if(document.getElementById("luxo").checked){
+      pontos_sonserina++
+   }
+
+  //Lógica p sexta pergunta:
+   if(document.getElementById("invisivel").checked){
+      pontos_grifinoria++
+   }
+   else if(document.getElementById("ler").checked){
+      pontos_corvinal++
+   }
+   else if(document.getElementById("curar").checked){
+      pontos_lufa_lufa++
+   }
+   else if(document.getElementById("persuadir").checked){
+      pontos_sonserina++
+   }
+
+//Lógica p ultima pergunta:
+   if(document.getElementById("adrenalina").checked){
+      pontos_grifinoria++
+   }
+   else if(document.getElementById("verdade").checked){
+      pontos_corvinal++
+   }
+   else if(document.getElementById("ajudarComunidade").checked){
+      pontos_lufa_lufa++
+   }
+   else if(document.getElementById("vantagem").checked){
       pontos_sonserina++
    }
 
@@ -105,6 +135,55 @@ function escolha_casa(){
    else if (pontos_sonserina> pontos_grifinoria && pontos_sonserina>pontos_corvinal && pontos_sonserina >pontos_lufa_lufa){
        window.location.href="sonserina.html"
    }
+
+   else{
+      localStorage.setItem("pontos_grifinoria", pontos_grifinoria)
+      localStorage.setItem("pontos_corvinal", pontos_corvinal)
+      localStorage.setItem("pontos_lufa_lufa", pontos_lufa_lufa)
+      localStorage.setItem("pontos_sonserina", pontos_sonserina)
+      window.location.href="desempate_teste.html"
+   }
+}
+
+function desempatar(){
+   if(!document.querySelector('input[name="desempate"]:checked')){
+      alert("Escolha uma das opções!")
+      return
+   }
+
+   let pontos_grifinoria= Number(localStorage.getItem("pontos_grifinoria"))
+   let pontos_corvinal=Number(localStorage.getItem("pontos_corvinal"))
+   let pontos_lufa_lufa=Number(localStorage.getItem("pontos_corvinal"))
+   let pontos_sonserina=Number(localStorage.getItem("pontos_sonserina"))
+
+   if(document.getElementById("gloria").checked){
+      pontos_grifinoria++
+   }
+   else if(document.getElementById("conhecimento").checked){
+      pontos_corvinal++
+   }
+   else if(document.getElementById("harmonia").checked){
+      pontos_lufa_lufa++
+   }
+   else if(document.getElementById("triunfo").checked){
+      pontos_sonserina++
+   }
+
+   localStorage.clear()
+
+   if (pontos_grifinoria> pontos_corvinal && pontos_grifinoria>pontos_lufa_lufa && pontos_grifinoria >pontos_sonserina){
+       window.location.href="grifinoria.html"
+   }
+   else if(pontos_corvinal> pontos_grifinoria && pontos_corvinal>pontos_lufa_lufa && pontos_corvinal >pontos_sonserina){
+       window.location.href="corvinal.html"
+   }
+   else if (pontos_lufa_lufa> pontos_grifinoria && pontos_lufa_lufa>pontos_corvinal && pontos_lufa_lufa >pontos_sonserina){
+       window.location.href="lufa.html"
+   }
+   else if (pontos_sonserina> pontos_grifinoria && pontos_sonserina>pontos_corvinal && pontos_sonserina >pontos_lufa_lufa){
+       window.location.href="sonserina.html"
+   }
+
 }
 
 function refazer_teste(){

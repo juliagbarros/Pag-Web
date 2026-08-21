@@ -189,7 +189,7 @@ a:hover{
     border-radius: 20px;
 }
 
-.lumos{
+.lumos, .alohomora, .accio, .imperio, .crucio, .avada, .patrono {
     background-color: rgb(25, 24, 64);
     color: white;
     border-radius: 20px;
@@ -199,91 +199,8 @@ a:hover{
     margin-right: 80px;
 }
 
-.lumos:hover{
-    transform: scale(1.08);
-}
-
-.alohomora{
-    background-color: rgb(25, 24, 64);
-    color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.alohomora:hover{
-    transform: scale(1.08);
-}
-
-.accio{
-    background-color: rgb(25, 24, 64);
-    color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.accio:hover{
-    transform: scale(1.08);
-}
-
-.imperio{
-    background-color: rgb(25, 24, 64);
-    color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.imperio:hover{
-    transform: scale(1.08);
-}
-
-.crucio{
-    background-color: rgb(25, 24, 64);
-    color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.crucio:hover{
-    transform: scale(1.08);
-}
-
-.avada{
-    background-color: rgb(25, 24, 64);
-    color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.avada:hover{
-    transform: scale(1.08);
-}
-
-.patrono{
-    background-color: rgb(25, 24, 64);
-    color: white;
-    border-radius: 20px;
-    padding: 5px;
-    margin-top: 10px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-
-.patrono:hover{
+.lumos:hover, .alohomora:hover, .accio:hover, .imperio:hover,
+.crucio:hover, .avada:hover, .patrono:hover {
     transform: scale(1.08);
 }
 
@@ -343,6 +260,10 @@ button:hover{
     transform: scale(1.1);   
 }
 
+#botao_finalizar, #teste_casa, #botao_refazer_teste{
+    cursor: pointer;
+}
+
 .teste button{
 margin-top: 40px;
 margin-left: auto;
@@ -391,5 +312,9 @@ box-shadow: 0 0 20px rgb(2, 0, 5);
     font-family: "Harry P";
     text-align: right;
     margin-right: 80px;
+}
+
+@media(max-width:768px){
+
 }
 
